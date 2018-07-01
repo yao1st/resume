@@ -1,0 +1,99 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\hypersetup{hidelinks}
+\name{于行尧}
+
+\basicInfo{
+  \email{yuxy16@mails.tsinghua.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 137-2557-4186} \textperiodcentered\ 
+  \homepage[yaoskingdom]{www.yaoskingdom.tk}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{清华大学}, 北京}{2016 -- 至今}
+\textit{保送硕士研究生}\ 控制科学与工程, 主修课程包括矩阵分析、凸优化、随机过程等
+\datedsubsection{\textbf{北京航空航天大学}, 北京}{2012 -- 2016}
+\textit{学士}\ 飞行器设计与工程（航天），专业课程包括卡尔曼滤波、数电模电、数字信号处理等
+
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{工业机器人无序分拣}}{2018年5月 -- 至今}
+\role{助理研究员}{商汤科技研究院}
+\begin{onehalfspacing}
+使用ENSENSO 3D相机获取点云数据，控制欧姆龙机器人实现目标零件（欧姆龙零件、鼠标滚轮）的定位与抓取
+\begin{itemize}
+  \item 阅读相机文档，实现传感器数据获取
+  \item 使用开源框架（PCL)进行图像预处理、特征提取、场景与模型的匹配、位姿估计
+  \item 使用欧姆龙viper机器人抓取零件（ROS）
+  \item 完成其他工作，如设计制作了Intel RealSense 415相机的安装支架等机械结构零件（CATIA）
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faFlag\ 项目经历}
+\datedsubsection{\textbf{XXX重大专项的部分技术预研}}{2017年3月 -- 至今}
+\role{研究生工作}{清华大学}
+\begin{onehalfspacing}
+对柔性臂建模、运动规划展开研究
+\begin{itemize}
+  \item 独立制作了一套柔性臂实验系统，采用PyQt编写了图形控制界面，C语言编程使用ARM同时控制15个电机运动
+  \item 利用模态函数、伪逆法、RRT等方法对运动规划展开研究
+  \item 已发表多篇文章和专利
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{基于一致性理论的四旋翼编队飞行研究}}{2015年12月 -- 2016年6月}
+\role{本科毕业设计}{北京航空航天大学}
+\begin{onehalfspacing}
+四旋翼飞行器的真机编队飞行
+\begin{itemize}
+  \item 实验环境为MotionCap，上位机为Raspberry Pi。通信采用UDP
+  \item 实现了三架小型无人机的编队飞行
+  \item Matlab仿真环境下针对非合作目标的编队跟随进行了方法研究
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT/工程技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python、 C、 C++
+  \item 科研软件: Matlab、Adams、Catia、V-Rep、ROS
+  \item 开发: Linux、tensorflow、ARM、OpenCV、Latex
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+%\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+\datedline{综合优秀奖，\textit{清华大学}}{2017}
+\datedline{国家奖学金，\textit{北京航空航天大学}}{2015}
+\datedline{国家励志奖学金，\textit{北京航空航天大学}}{2014}
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 已录用论文：Xingyao Y, Xueqian W, Bin L, et al. Differential Kinematics for A Tendon-driven Snake-like Robot[C]//Control and Decision Conference (CCDC), 2018 30th Chinese. IEEE
+  \item 审查中论文：Xingyao Y，Xueqian W, Bin L, et al. Collision Free Path Planning for Multi-Section Continuum Manipulators Based on A Modal Method. [C]//IEEE-CYBER 2018
+  \item 申请中专利：18A100057JYC-一种球铰绳驱柔性机械臂专利技术\\
+  \hspace*{6em}7A100544JYC-一种连续型机械臂的空间避障轨迹规划方法\\
+  \hspace*{6em}一种新型绳驱蛇形机器人的建模方法及运动学求解方法
+  \item 语言: 英语 - 熟练(六级 625)
+  			
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
